@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: aquamarine;
+  font-weight: 600;
+}
+.warring-border{
+  border: 1px solid red;
+  color: red;
+}
+.war-text , .war-text2 , .war-text3{
+  color: red; 
+  padding: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  display: none;
+}
+.added-contact{
+  width: 200px;
+  height: 370px;
+  padding: 10px 5px;
+  overflow: auto;
+}
+ul{
+  position: relative;
+  list-style: none;
+}
+li{
+  background-color: lightgreen;
+  margin-left: -30px;
+  padding-left: 10px;
+}
+.close-list{
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+  padding: 4px 12px;
+}
