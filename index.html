@@ -14,44 +14,50 @@
 
   <div class="contact">
     <div class="container">
-      <div class="contact-inner d-flex justify-content-sm-between">
-        <form class="contact-form " action="" method="post">
-          <div class="mt-3">
-            <label for="user-name">Ismingizni kiriting: </label>
-            <input class="user-inf rounded-3 px-2 py-1" type="text" name="name" id="user-name" placeholder="enter name...">
-            <p class="war-text">Iltimos ismingizni birinchi va raqam ishlatmasdan kiriting!!!</p>
-          </div>
-      
-          <div class="mt-3">
-            <label for="user-surname">Familyangizni kiriting: </label>
-            <input class="user-inf rounded-3 px-2 py-1" type="text" name="surname" id="user-surname" placeholder="enter surname...">
-            <p class="war-text2">Iltimos familyangizni kiriting</p>
-          </div>
-      
-          <div class="mt-3">
-            <label for="relation">Relation</label>
-            <select class="familiar rounded-3 py-1 px-2" id="relation" name="familiar">
+      <div class="contact-inner d-flex justify-content-around align-items-start mt-5">
+        <form class="form-contact d-flex flex-column justify-content-start" action="" method="post">
+          <label for="user-name">
+            <span class="name-span fs-5 text-white fw-bolder">
+              Enter your name: 
+            </span>
+            <input class="name-input rounded-pill py-1 px-2 border-2 mt-3" type="text" name="name" id="user-name" placeholder="enter name..">
+          </label>
+
+          <label for="user-surname">
+            <span class="surname-span fs-5 text-white fw-bolder">
+              Enter your surname: 
+            </span>
+            <input class="surname-input rounded-pill py-1 px-2 border-0 mt-3" type="text" name="surname" id="user-surname" placeholder="enter surname..">
+          </label>
+
+          <label for="relation">
+            <span class="relation-span fs-5 text-white fw-bolder">
+              chouse your relation:
+            </span>
+            <select class="select-reletion rounded-pill py-1 px-2 border-0 mt-3" name="relation" id="relation">
               <option value="friend">friend</option>
-              <option value="relative">relative</option>
+              <option value="familar">familar</option>
               <option value="stranger">stranger</option>
-              <option value="other">other</option>
             </select>
-          </div>
-      
-          <div class="mt-3">
-            <label for="user-number">Raqamingizni kiriting: </label>
-            <input class="user-inf rounded-3 px-2 py-1" type="text" name="number" id="user-number" placeholder="enter number...">
-            <p class="war-text3">Iltimos raqmingizni kiriting</p>
-          </div>
-          
-          <button class="mt-2 btn-primary px-2 py-1" type="submit">Add Contact</button>
+          </label>
+
+          <label for="user-number">
+            <span class="number-span fs-5 text-white fw-bolder">
+              Enter your phone number: 
+            </span>
+            <input class="number-input rounded-pill py-1 px-2 border-0 mt-3" type="text" name="number" id="user-number" placeholder="enter number...">
+          </label>
+
+          <button class="contact-form btn btn-primary rounded-pill w-50 mt-3" type="submit">Add contact</button>
         </form>
 
-        <output class="added-contact bg-success mt-2">
-          <h4>Result:</h4>
-          <ul class="result-ul">
-            
+        <output class="output">
+          <h3 class="text-center text-black fw-bolder me-3 pt-3">Result:</h3>
+          <ul  class="list-output">
           </ul>
+          <!-- <div class="d-flex flex-column align-items-end">
+            <button class="clear-btn btn btn-secondary w-50 fw-bold fs-5 rounded-pill">clear</button>
+          </div> -->
         </output>
       </div>
     </div>
